@@ -114,25 +114,6 @@ Chess_Game/
 └── README.md                 # This file
 ```
 
-## 🎮 Game Features
-
-### Real-time Multiplayer
-- Instant move synchronization between players
-- Live game state updates
-- Automatic opponent detection
-
-### Chess Logic
-- Full chess rule validation
-- Check and checkmate detection
-- Pawn promotion support
-- Move history with algebraic notation
-
-### User Experience
-- Clean, modern interface
-- Responsive design for all devices
-- Session management
-- Game state persistence
-
 ## 🔧 Development
 
 ### Available Scripts
@@ -158,16 +139,6 @@ npm run preview  # Preview production build
 *Create or join a game session with a unique ID*
 
 ---
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork the repository**
-2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
-3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
-4. **Push to the branch** (`git push origin feature/AmazingFeature`)
-5. **Open a Pull Request**
 
 ### 🐛 Reporting Bugs
 
