@@ -1,5 +1,9 @@
 # ♟️ Real-Time Multiplayer Chess Game
 
+### Game Interface
+![Game Interface](images/game_interface.png)
+*Real-time chess game with move history and player information*
+
 A real-time, two-player chess game built with React, Node.js, and Socket.IO, featuring move validation, history tracking, and a sleek responsive design.
 
 [![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
@@ -147,9 +151,6 @@ npm run preview  # Preview production build
 
 ## 📸 Screenshots
 
-### Game Interface
-![Game Interface](images/game_interface.png)
-*Real-time chess game with move history and player information*
 
 ### Session Creation
 ![Session Creation](images/session_interface.png)
