@@ -1,90 +1,201 @@
-♟️ Real-Time Multiplayer Chess Game
+# ♟️ Real-Time Multiplayer Chess Game
 
 A real-time, two-player chess game built with React, Node.js, and Socket.IO, featuring move validation, history tracking, and a sleek responsive design.
 
-🚀 Features
-♟️ Real-time multiplayer gameplay (WebSocket)
+[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-4+-orange.svg)](https://socket.io/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-✅ Accurate move validation via chess.js
+## 🚀 Features
 
-📱 Responsive UI for desktop and mobile
+- ♟️ **Real-time multiplayer gameplay** via WebSocket
+- ✅ **Accurate move validation** using chess.js
+- 📱 **Responsive UI** for desktop and mobile
+- 💾 **Persistent game state** across sessions
+- 📜 **Move history tracking**
+- ⬇️ **Game export functionality** (.PGN support coming soon!)
+- 🎯 **Check/Checkmate detection**
+- 🔄 **Auto-reconnection** on network issues
 
-💾 Persistent game state across sessions
+## 🛠 Tech Stack
 
-📜 Move history tracking
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | React, Vite, Socket.IO Client |
+| **Backend** | Node.js, Express, Socket.IO |
+| **Chess Logic** | chess.js |
+| **Styling** | CSS3, Flexbox/Grid, Responsive Design |
 
-⬇️ Game export functionality (.PGN support coming soon!)
+## ⚙️ Getting Started
 
-🛠 Tech Stack
-Layer	Tech Stack
-Frontend	React, Vite, Socket.IO Client
-Backend	Node.js, Express, Socket.IO
-Chess Logic	chess.js
-Styling	CSS3, Flexbox/Grid, Responsive Design
+### Prerequisites
 
-⚙️ Getting Started
-✅ Prerequisites
-Node.js v14+
+- Node.js v14 or higher
+- npm or yarn package manager
 
-npm or yarn
+### 📦 Installation
 
-📦 Installation
-bash
-Copy
-Edit
-# Clone the repo
-git clone https://github.com/Ashokkedari/Chess_Game.git
-cd Chess_Game
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ashokkedari/Chess_Game.git
+   cd Chess_Game
+   ```
 
-# Install backend dependencies
-cd backend
-npm install
+2. **Install backend dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
 
-# Install frontend dependencies
-cd ../chess_application
-npm install
-▶️ Running the App
-bash
-Copy
-Edit
-# Start backend
-cd backend
-npm run dev
-bash
-Copy
-Edit
-# Start frontend
-cd ../chess_application
-npm run dev
-Now open your browser and go to:
-🔗 http://localhost:5173
+3. **Install frontend dependencies**
+   ```bash
+   cd ../chess_application
+   npm install
+   ```
 
-🕹️ How to Play
-Create or join a game with a Session ID
+### ▶️ Running the Application
 
-Share the Session ID with your opponent
+1. **Start the backend server**
+   ```bash
+   cd backend
+   npm run dev
+   ```
+   The backend will start on `http://localhost:3000`
 
-Enjoy real-time chess with validated moves and history tracking
+2. **Start the frontend development server**
+   ```bash
+   cd ../chess_application
+   npm run dev
+   ```
+   The frontend will start on `http://localhost:5173`
 
-📁 Folder Structure
-bash
-Copy
-Edit
+3. **Open your browser and navigate to:**
+   ```
+   http://localhost:5173
+   ```
+
+## 🕹️ How to Play
+
+1. **Create a new game** or **join an existing one** using a Session ID
+2. **Share the Session ID** with your opponent
+3. **Start playing** real-time chess with validated moves and history tracking
+4. **Track your moves** with the built-in move history
+5. **Export your games** for analysis (coming soon!)
+
+## 📁 Project Structure
+
+```
 Chess_Game/
-├── backend/                # Express + Socket.IO backend
-│   └── server.js
-├── chess_application/      # React frontend with game logic
-│   ├── components/
-│   ├── pages/
-│   └── socket.js
-└── README.md
-📸 Demo / Screenshots
-(Add gameplay screenshots or a screen recording here for maximum impact)
+├── backend/                    # Express + Socket.IO backend
+│   ├── server.js              # Main server file
+│   ├── package.json           # Backend dependencies
+│   └── node_modules/          # Backend packages
+├── chess_application/         # React frontend
+│   ├── src/
+│   │   ├── components/        # React components
+│   │   │   ├── ChessBoard.jsx
+│   │   │   ├── CreateGame.jsx
+│   │   │   ├── JoinGame.jsx
+│   │   │   └── MoveHistory.jsx
+│   │   ├── pages/            # Page components
+│   │   │   ├── GamePage.jsx
+│   │   │   └── SessionPage.jsx
+│   │   ├── App.jsx           # Main app component
+│   │   ├── socket.js         # Socket.IO client setup
+│   │   └── main.jsx          # App entry point
+│   ├── package.json          # Frontend dependencies
+│   └── vite.config.js        # Vite configuration
+└── README.md                 # This file
+```
 
-📝 License
-This project is licensed under the MIT License.
-You are free to use, modify, and distribute it.
+## 🎮 Game Features
 
-🙌 Contributing
-Pull requests are welcome!
-Open an issue to suggest features or report bugs.
+### Real-time Multiplayer
+- Instant move synchronization between players
+- Live game state updates
+- Automatic opponent detection
+
+### Chess Logic
+- Full chess rule validation
+- Check and checkmate detection
+- Pawn promotion support
+- Move history with algebraic notation
+
+### User Experience
+- Clean, modern interface
+- Responsive design for all devices
+- Session management
+- Game state persistence
+
+## 🔧 Development
+
+### Available Scripts
+
+**Backend:**
+```bash
+npm run dev      # Start development server with nodemon
+npm start        # Start production server
+```
+
+**Frontend:**
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run preview  # Preview production build
+```
+
+## 📸 Screenshots
+
+*Add gameplay screenshots or screen recordings here for maximum impact*
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. **Fork the repository**
+2. **Create a feature branch** (`git checkout -b feature/AmazingFeature`)
+3. **Commit your changes** (`git commit -m 'Add some AmazingFeature'`)
+4. **Push to the branch** (`git push origin feature/AmazingFeature`)
+5. **Open a Pull Request**
+
+### 🐛 Reporting Bugs
+
+- Open an issue with a clear description of the bug
+- Include steps to reproduce the problem
+- Add screenshots if applicable
+
+### 💡 Suggesting Features
+
+- Open an issue with your feature request
+- Describe the feature and its benefits
+- Consider contributing the implementation
+
+## 📝 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+You are free to:
+- ✅ Use the software for any purpose
+- ✅ Modify the software
+- ✅ Distribute the software
+- ✅ Distribute modified versions
+
+## 🙏 Acknowledgments
+
+- [chess.js](https://github.com/jhlywa/chess.js) for chess logic
+- [Socket.IO](https://socket.io/) for real-time communication
+- [React](https://reactjs.org/) for the frontend framework
+- [Vite](https://vitejs.dev/) for the build tool
+
+## 📞 Support
+
+If you have any questions or need help:
+
+- 🐛 **Bug Reports**: [Open an Issue](https://github.com/Ashokkedari/Chess_Game/issues)
+- 💡 **Feature Requests**: [Open an Issue](https://github.com/Ashokkedari/Chess_Game/issues)
+- 📧 **Email**: ashokkedari385@gmail.com
+
+---
+
+**Made with ❤️ by [Ashokkedari](https://github.com/Ashokkedari)**
