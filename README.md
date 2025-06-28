@@ -148,11 +148,11 @@ npm run preview  # Preview production build
 ## 📸 Screenshots
 
 ### Game Interface
-![Game Interface](images/game-interface.png)
+![Game Interface](images/game_interface.png)
 *Real-time chess game with move history and player information*
 
 ### Session Creation
-![Session Creation](images/session-creation.png)
+![Session Creation](images/session_interface.png)
 *Create or join a game session with a unique ID*
 
 ---
