@@ -1,21 +1,22 @@
 # ♟️ Real-Time Multiplayer Chess Game
 
+[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
+[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
+[![Socket.IO](https://img.shields.io/badge/Socket.IO-4+-orange.svg)](https://socket.io/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 ### Game Interface
 ![Game Interface](images/game_interface.png)
 *Real-time chess game with move history and player information*
 
 A real-time, two-player chess game built with React, Node.js, and Socket.IO, featuring move validation, history tracking, and a sleek responsive design.
 
-[![Node.js](https://img.shields.io/badge/Node.js-16+-green.svg)](https://nodejs.org/)
-[![React](https://img.shields.io/badge/React-18+-blue.svg)](https://reactjs.org/)
-[![Socket.IO](https://img.shields.io/badge/Socket.IO-4+-orange.svg)](https://socket.io/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 ## 🚀 Features
 
 - ♟️ **Real-time multiplayer gameplay** via WebSocket
 - ✅ **Accurate move validation** using chess.js
-- 📱 **Responsive UI** for desktop and mobile
 - 💾 **Persistent game state** across sessions
 - 📜 **Move history tracking**
 - ⬇️ **Game export functionality** (.PGN support coming soon!)
