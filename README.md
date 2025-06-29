@@ -131,9 +131,6 @@ npm run build    # Build for production
 npm run preview  # Preview production build
 ```
 
-## 📸 Screenshots
-
-
 ### Session Creation
 ![Session Creation](images/session_interface.png)
 *Create or join a game session with a unique ID*
@@ -146,28 +143,10 @@ npm run preview  # Preview production build
 - Include steps to reproduce the problem
 - Add screenshots if applicable
 
-### 💡 Suggesting Features
-
-- Open an issue with your feature request
-- Describe the feature and its benefits
-- Consider contributing the implementation
-
 ## 📝 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-You are free to:
-- ✅ Use the software for any purpose
-- ✅ Modify the software
-- ✅ Distribute the software
-- ✅ Distribute modified versions
-
-## 🙏 Acknowledgments
-
-- [chess.js](https://github.com/jhlywa/chess.js) for chess logic
-- [Socket.IO](https://socket.io/) for real-time communication
-- [React](https://reactjs.org/) for the frontend framework
-- [Vite](https://vitejs.dev/) for the build tool
 
 ## 📞 Support
 
